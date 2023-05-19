@@ -37,8 +37,8 @@ const Header = () => {
           :
           <button className='z-10'><Image src={iconHamburger} alt='icon hamburger'  onClick={handleIsOpen} /></button>
          }           
-        <nav className={"backdrop-blur-xl bg-gray-500/10 gap-10 absolute top-0 right-0 w-[70%]"
-         + (isOpen ?  " flex flex-col h-screen gap-11 pt-40 pl-8 "+ isOpenAnimateClass : " flex flex-col h-screen gap-11 pt-40 pl-8 translate-x-full "+ isOpenAnimateClass)}>
+        <nav className={"flex flex-col h-screen backdrop-blur-xl bg-gray-500/10 gap-10 fixed pt-40 pl-8 top-0 right-0 w-[70%] translate-x-full "
+         + (isOpen ? isOpenAnimateClass : isOpenAnimateClass + " translate-x-full")}>
             <Link href='/' className='flex' onClick={handleIsOpen}><span className='md:hidden xl:block font-bold mr-2'>00 </span>HOME</Link>
             <Link href='/Destination' className='flex' onClick={handleIsOpen}><span className='md:hidden xl:block font-bold mr-2'>01 </span>DESTINATION</Link>
             <Link href='/Crew' className='flex' onClick={handleIsOpen}><span className='md:hidden xl:block font-bold mr-2'>02 </span>CREW</Link>

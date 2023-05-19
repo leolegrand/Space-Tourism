@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${barlow.variable} ${bellefair.variable} font-sans w-screen overflow-hidden`}>
+      <body className={`${barlow.variable} ${bellefair.variable} font-sans w-screen h-screen overflow-hidden`}>
         <Header/>
         {children}
       </body>
