@@ -7,6 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-barlow)'],
+        mono: ['var(--font-bellefair)'],
+      },
+      keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translate(0%)' },
+        },
+     
+        slideOut: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translate(100%)' },
+        },
+      },
+      animation: {
+        slideIn: 'slideIn 400ms ease-in-out forwards',
+        slideOut: 'slideOut 400ms ease-in-out forwards',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
