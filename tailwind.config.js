@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        'color-primary': '#0B0D17',
+        'color-secondary': '#D0D6F9',
+        'color-tertiary': '#FFFFF',
+      },
       fontFamily: {
         sans: ['var(--font-barlow)'],
         mono: ['var(--font-bellefair)'],
