@@ -1,3 +1,6 @@
+'use client'
+
+import SubHeader from '@/components/SubHeader/SubHeader';
 import React from 'react';
 
 const Crew = () => {
@@ -6,6 +9,7 @@ const Crew = () => {
       bg-[url('../public/assets/crew/background-crew-mobile.jpg')]
       md:bg-[url('../public/assets/crew/background-crew-tablet.jpg')]
       xl:bg-[url('../public/assets/crew/background-crew-desktop.jpg')]">
+        <SubHeader/>
     </main>
     );
 };

@@ -1,3 +1,6 @@
+'use client'
+
+import SubHeader from '@/components/SubHeader/SubHeader';
 import React from 'react';
 
 const Technology = () => {
@@ -6,6 +9,7 @@ const Technology = () => {
       bg-[url('../public/assets/technology/background-technology-mobile.jpg')]
       md:bg-[url('../public/assets/technology/background-technology-tablet.jpg')]
       xl:bg-[url('../public/assets/technology/background-technology-desktop.jpg')]">
+        <SubHeader/>
     </main>
     );
 };

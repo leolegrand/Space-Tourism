@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <main className="flex items-center flex-col xl:flex-row
-      bg-no-repeat bg-cover bg-center h-screen w-screen fixed top-0 left-0
+    <main className="flex items-center flex-col xl:flex-row h-full
+      bg-no-repeat bg-cover bg-center h-[50vh] w-screen fixed top-0 left-0
       bg-[url('../public/assets/home/background-home-mobile.jpg')]
       md:bg-[url('../public/assets/home/background-home-tablet.jpg')]
       xl:bg-[url('../public/assets/home/background-home-desktop.jpg')]">
@@ -10,7 +12,10 @@ export default function Home() {
         <h1 className="text-8xl md:text-9xl xl:text-[10vw] font-mono my-5 ">SPACE</h1>
         <p className="text-color-secondary md:text-xl xl:text-[1.5vw] xl:leading-7 text-center max-w-[250px] md:max-w-[380px] xl:max-w-[25vw]">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience! </p>
         </section>
-        <button className="rounded-full bg-white w-[150px] h-[150px] md:w-[242px] md:h-[242px] xl:h-[300px] xl:w-[300px]  fixed bottom-10 md:bottom-16 xl:right-28 xl:bottom-28 text-black text-2xl md:text-4xl font-mono cursor-pointer drop-shadow-[0px_0px_40px_50px_rgba(255,255,255,1)]">EXPLORE</button>
+        <Link href="/Destination" className='fixed bottom-10 md:bottom-16 xl:right-28 xl:bottom-28'>
+          <button className="rounded-full bg-white w-[150px] h-[150px] md:w-[242px] md:h-[242px] xl:h-[300px] xl:w-[300px] text-black text-2xl md:text-4xl font-mono cursor-pointer drop-shadow-[0px_0px_40px_50px_rgba(255,255,255,1)]">EXPLORE</button>
+          </Link>
+        
        
     </main>
   )

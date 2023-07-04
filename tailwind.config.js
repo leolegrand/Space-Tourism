@@ -18,8 +18,13 @@ module.exports = {
       },
       keyframes: {
         slideIn: {
-          '0%': { transform: 'translateX(100%)' },
+          '0%': { transform: 'translateX(200%)' },
           '100%': { transform: 'translate(0%)' },
+        },
+
+        appear: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1'  },
         },
      
         slideOut: {
@@ -28,8 +33,9 @@ module.exports = {
         },
       },
       animation: {
-        slideIn: 'slideIn 400ms ease-in-out forwards',
+        slideIn: 'slideIn 500ms ease-in-out forwards',
         slideOut: 'slideOut 400ms ease-in-out forwards',
+        appear: 'appear 400ms ease-in-out forwards'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
